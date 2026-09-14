@@ -37,7 +37,7 @@ const settings: TranslationStrings = {
   'settings.mapCartoKeyHint': 'تعرض خرائط CARTO الأساسية علامة مائية بدون مفتاح. مجاني وبدون حساب، من',
   'settings.mapCartoKeyLink': 'مفتاح API لخرائط carto.com الأساسية',
   'settings.mapCartoKeyMissing':
-    'هذا القالب خريطة أساسية من CARTO. بدون مفتاح تطبع CARTO عبارة "API KEY REQUIRED" على كل بلاطة. إلى أن تُدخل مفتاحًا، تعرض TREK الخريطة الأساسية الافتراضية بدلاً منها.',
+    'هذا القالب خريطة أساسية من CARTO. بدون مفتاح تطبع CARTO عبارة "API KEY REQUIRED" على كل بلاطة. إلى أن تُدخل مفتاحًا، تعرض trip4 الخريطة الأساسية الافتراضية بدلاً منها.',
   'settings.mapStyle': 'نمط الخريطة',
   'settings.mapStylePlaceholder': 'اختر نمط Mapbox',
   'settings.mapStyleHint': 'إعداد مسبق أو عنوان URL mapbox://styles/USER/ID خاص بك',
@@ -203,17 +203,17 @@ const settings: TranslationStrings = {
   'settings.about.featureRequestHint': 'اقترح ميزة جديدة',
   'settings.about.wikiHint': 'التوثيق والأدلة',
   'settings.about.descriptionManaged':
-    'TREK helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
+    'trip4 helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
   'settings.about.sourceTitle': 'Source code',
-  'settings.about.sourceHint': 'TREK is open source, licensed AGPL-3.0',
+  'settings.about.sourceHint': 'trip4 is open source, licensed AGPL-3.0',
   'settings.about.supporters.badge': 'الداعمون الشهريون',
-  'settings.about.supporters.title': 'رفاق رحلة TREK',
+  'settings.about.supporters.title': 'رفاق رحلة trip4',
   'settings.about.supporters.subtitle':
-    'بينما تخطّط لمسارك التالي، يساعد هؤلاء الأشخاص في التخطيط لمستقبل TREK. تذهب مساهمتهم الشهرية مباشرةً إلى التطوير والساعات الفعلية المبذولة — حتى يظلّ TREK مفتوح المصدر.',
+    'بينما تخطّط لمسارك التالي، يساعد هؤلاء الأشخاص في التخطيط لمستقبل trip4. تذهب مساهمتهم الشهرية مباشرةً إلى التطوير والساعات الفعلية المبذولة — حتى يظلّ trip4 مفتوح المصدر.',
   'settings.about.supporters.since': 'داعم منذ {date}',
   'settings.about.supporters.tierEmpty': 'كن الأول',
   'settings.about.description':
-    'TREK هو مخطط سفر مستضاف ذاتيًا يساعدك على تنظيم رحلاتك من أول فكرة حتى آخر ذكرى. تخطيط يومي، ميزانية، قوائم تعبئة، صور والمزيد — كل شيء في مكان واحد، على خادمك الخاص.',
+    'trip4 هو مخطط سفر مستضاف ذاتيًا يساعدك على تنظيم رحلاتك من أول فكرة حتى آخر ذكرى. تخطيط يومي، ميزانية، قوائم تعبئة، صور والمزيد — كل شيء في مكان واحد، على خادمك الخاص.',
   'settings.about.madeWith': 'صُنع بـ',
   'settings.about.madeBy': 'بواسطة موريس ومجتمع مفتوح المصدر متنامٍ.',
   'settings.username': 'اسم المستخدم',
@@ -338,7 +338,7 @@ const settings: TranslationStrings = {
   'settings.airtrail.allowInsecureTlsHint': 'فعّل هذا فقط لنسخة موثوقة على شبكتك الخاصة.',
   'settings.airtrail.writeBack': 'كتابة التغييرات إلى AirTrail',
   'settings.airtrail.writeBackHint':
-    'مُعطّل افتراضيًا: AirTrail هو مصدر الحقيقة وTREK يقرأ منه فقط. فعّله لإرسال التعديلات التي تجريها في TREK إلى AirTrail.',
+    'مُعطّل افتراضيًا: AirTrail هو مصدر الحقيقة وtrip4 يقرأ منه فقط. فعّله لإرسال التعديلات التي تجريها في trip4 إلى AirTrail.',
   'settings.airtrail.connected': 'متصل',
   'settings.airtrail.notConnected': 'غير متصل',
   'settings.airtrail.toast.saved': 'تم حفظ اتصال AirTrail',
@@ -449,7 +449,7 @@ const settings: TranslationStrings = {
   'settings.startPageDashboard': 'لوحة التحكم',
   'settings.startPageActiveTrip': 'الرحلة النشطة',
   'settings.startPageHint':
-    'يفتح TREK مباشرةً على الرحلة الجارية، وإن لم توجد فعلى الرحلة القادمة التالية. وهي نفس الرحلة التي تبرزها لوحة التحكم.',
+    'يفتح trip4 مباشرةً على الرحلة الجارية، وإن لم توجد فعلى الرحلة القادمة التالية. وهي نفس الرحلة التي تبرزها لوحة التحكم.',
   'settings.startTripTab': 'علامة تبويب البدء',
   'settings.startTripTabHint':
     'علامة التبويب التي تفتح بها الرحلة. إذا كانت تابعة لإضافة أوقفت تشغيلها، تُفتح الخطة بدلاً منها.',

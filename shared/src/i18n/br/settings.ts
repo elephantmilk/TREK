@@ -39,7 +39,7 @@ const settings: TranslationStrings = {
   'settings.mapCartoKeyHint': "Os mapas base do CARTO exibem uma marca d'água sem chave. Gratuita e sem conta, em",
   'settings.mapCartoKeyLink': 'chave de API de mapas base do carto.com',
   'settings.mapCartoKeyMissing':
-    'Este modelo é um mapa base do CARTO. Sem uma chave, o CARTO estampa "API KEY REQUIRED" em cada bloco. Até você inserir uma, o TREK mostra o mapa base padrão.',
+    'Este modelo é um mapa base do CARTO. Sem uma chave, o CARTO estampa "API KEY REQUIRED" em cada bloco. Até você inserir uma, o trip4 mostra o mapa base padrão.',
   'settings.mapStyle': 'Estilo do mapa',
   'settings.mapStylePlaceholder': 'Selecionar um estilo Mapbox',
   'settings.mapStyleHint': 'Preset ou sua própria URL mapbox://styles/USER/ID',
@@ -104,13 +104,13 @@ const settings: TranslationStrings = {
   'settings.about.featureRequestHint': 'Sugira um novo recurso',
   'settings.about.wikiHint': 'Documentação e guias',
   'settings.about.descriptionManaged':
-    'TREK helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
+    'trip4 helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
   'settings.about.sourceTitle': 'Source code',
-  'settings.about.sourceHint': 'TREK is open source, licensed AGPL-3.0',
+  'settings.about.sourceHint': 'trip4 is open source, licensed AGPL-3.0',
   'settings.about.supporters.badge': 'Apoiadores Mensais',
-  'settings.about.supporters.title': 'Companheiros de viagem do TREK',
+  'settings.about.supporters.title': 'Companheiros de viagem do trip4',
   'settings.about.supporters.subtitle':
-    'Enquanto você planeja sua próxima rota, essas pessoas planejam junto o futuro do TREK. A contribuição mensal delas vai direto para o desenvolvimento e horas reais investidas — para o TREK continuar Open Source.',
+    'Enquanto você planeja sua próxima rota, essas pessoas planejam junto o futuro do trip4. A contribuição mensal delas vai direto para o desenvolvimento e horas reais investidas — para o trip4 continuar Open Source.',
   'settings.about.supporters.since': 'apoiador desde {date}',
   'settings.about.supporters.tierEmpty': 'Seja o primeiro',
   'settings.about.supporter.tier.noReturnTicket': 'No Return Ticket',
@@ -119,7 +119,7 @@ const settings: TranslationStrings = {
   'settings.about.supporter.tier.budgetTraveller': 'Budget Traveller',
   'settings.about.supporter.tier.hostelBunkmate': 'Hostel Bunkmate',
   'settings.about.description':
-    'TREK é um planejador de viagens auto-hospedado que ajuda você a organizar suas viagens da primeira ideia à última lembrança. Planejamento diário, orçamento, listas de bagagem, fotos e muito mais — tudo em um só lugar, no seu próprio servidor.',
+    'trip4 é um planejador de viagens auto-hospedado que ajuda você a organizar suas viagens da primeira ideia à última lembrança. Planejamento diário, orçamento, listas de bagagem, fotos e muito mais — tudo em um só lugar, no seu próprio servidor.',
   'settings.about.madeWith': 'Feito com',
   'settings.about.madeBy': 'por Maurice e uma crescente comunidade open-source.',
   'settings.username': 'Nome de usuário',
@@ -350,7 +350,7 @@ const settings: TranslationStrings = {
   'settings.airtrail.allowInsecureTlsHint': 'Ative apenas para uma instância confiável na sua própria rede.',
   'settings.airtrail.writeBack': 'Gravar alterações de volta no AirTrail',
   'settings.airtrail.writeBackHint':
-    'Desativado por padrão: o AirTrail é a fonte da verdade e o TREK apenas lê dele. Ative para enviar ao AirTrail as alterações feitas no TREK.',
+    'Desativado por padrão: o AirTrail é a fonte da verdade e o trip4 apenas lê dele. Ative para enviar ao AirTrail as alterações feitas no trip4.',
   'settings.airtrail.connected': 'Conectado',
   'settings.airtrail.notConnected': 'Não conectado',
   'settings.airtrail.toast.saved': 'Conexão com o AirTrail salva',
@@ -463,7 +463,7 @@ const settings: TranslationStrings = {
   'settings.startPageDashboard': 'Painel',
   'settings.startPageActiveTrip': 'Viagem ativa',
   'settings.startPageHint':
-    'O TREK abre direto na viagem que está acontecendo, ou na próxima que começa. É a mesma viagem que o painel destaca.',
+    'O trip4 abre direto na viagem que está acontecendo, ou na próxima que começa. É a mesma viagem que o painel destaca.',
   'settings.startTripTab': 'Aba inicial',
   'settings.startTripTabHint':
     'A aba com que a viagem abre. Se ela pertencer a um complemento desativado, abre a visão de plano.',

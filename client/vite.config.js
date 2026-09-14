@@ -212,8 +212,8 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       manifest: {
-        name: 'TREK \u2014 Travel Planner',
-        short_name: 'TREK',
+        name: 'trip4 \u2014 Travel Planner',
+        short_name: 'trip4',
         description: 'Travel Resource & Exploration Kit',
         theme_color: '#111827',
         background_color: '#0f172a',

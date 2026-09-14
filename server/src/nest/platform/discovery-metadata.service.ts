@@ -3,6 +3,7 @@ import type express from 'express';
 import { mcpAuthMetadataRouter } from '@modelcontextprotocol/sdk/server/auth/router';
 import type { OAuthMetadata } from '@modelcontextprotocol/sdk/shared/auth';
 import { ALL_SCOPES } from '../../mcp/scopes';
+import { APP_MCP_NAME } from '@trek/shared';
 import { getMcpSafeUrl } from '../../app-config';
 
 /**
@@ -45,7 +46,7 @@ export class DiscoveryMetadataService {
       oauthMetadata: metadata,
       resourceServerUrl: new URL(`${metadata.issuer}/mcp`),
       scopesSupported: ALL_SCOPES as string[],
-      resourceName: 'TREK MCP',
+      resourceName: APP_MCP_NAME,
     });
     return this.sdkMetaRouter;
   }

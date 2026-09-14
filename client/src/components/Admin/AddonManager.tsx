@@ -1,6 +1,7 @@
 import { useEffect, useState, type ComponentType } from 'react'
 import { adminApi } from '../../api/client'
 import { useTranslation } from '../../i18n'
+import { APP_NAME } from '@trek/shared'
 import { useAddonStore } from '../../store/addonStore'
 import { useIsDark } from '../../hooks/useIsDark'
 import { useToast } from '../shared/Toast'
@@ -241,7 +242,7 @@ export default function AddonManager({ bagTrackingEnabled, onToggleBagTracking, 
           <h2 className="text-subtitle font-semibold tracking-tight text-content">{t('admin.addons.title')}</h2>
           <p className="mt-1 flex flex-wrap items-center gap-1 text-caption text-content-muted">
             {t('admin.addons.subtitleBefore')}
-            <img src={dark ? '/text-light.svg' : '/text-dark.svg'} alt="TREK" style={{ height: 11, verticalAlign: 'middle', opacity: 0.7 }} />
+            <img src={dark ? '/text-light.svg' : '/text-dark.svg'} alt={APP_NAME} style={{ height: 11, verticalAlign: 'middle', opacity: 0.7 }} />
             {t('admin.addons.subtitleAfter')}
           </p>
         </div>

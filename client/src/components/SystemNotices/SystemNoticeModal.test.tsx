@@ -289,7 +289,7 @@ describe('ModalRenderer', () => {
   it('FE-SN-MODAL-007: body params are interpolated before rendering', async () => {
     const notice = makeNotice({
       bodyKey: 'Hello {name}, welcome to {app}',
-      bodyParams: { name: 'Alice', app: 'TREK' },
+      bodyParams: { name: 'Alice', app: 'trip4' },
     });
     render(<ModalRenderer notices={[notice]} />);
 

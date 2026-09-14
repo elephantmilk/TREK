@@ -23,6 +23,7 @@ import PublicLanguagePicker from '../components/shared/PublicLanguagePicker';
 import { OFM_POSITRON, DEFAULT_MAP_CENTER, DEFAULT_MAP_ZOOM, MAP_MAX_ZOOM, attributionForTile } from '../constants/mapDefaults';
 import VectorBasemap from '../components/Map/VectorBasemap';
 import { useTranslation } from '../i18n';
+import { APP_NAME } from '@trek/shared';
 import { avatarSrc } from '../utils/avatarSrc';
 import { safeHexColor } from '../utils/safeColor';
 import { getMergedItems, getTransportForDay, hidesOnMiddleDay } from '../utils/dayMerge';
@@ -243,7 +244,7 @@ export default function SharedTripPage() {
             border: '1px solid rgba(255,255,255,0.1)',
           }}
         >
-          <img src="/icons/icon-white.svg" alt="TREK" width="26" height="26" />
+          <img src="/icons/icon-white.svg" alt={APP_NAME} width="26" height="26" />
         </div>
 
         <div
@@ -1205,9 +1206,9 @@ export default function SharedTripPage() {
               boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
             }}
           >
-            <img src="/icons/icon.svg" alt="TREK" width="18" height="18" style={{ borderRadius: 4 }} />
+            <img src="/icons/icon.svg" alt={APP_NAME} width="18" height="18" style={{ borderRadius: 4 }} />
             <span className="text-[#9ca3af]" style={{ fontSize: 'calc(11px * var(--fs-scale-caption, 1))' }}>
-              {t('shared.sharedVia')} <strong className="text-[#6b7280]">TREK</strong>
+              {t('shared.sharedVia')} <strong className="text-[#6b7280]">{APP_NAME}</strong>
             </span>
           </div>
           <div className="text-[#d1d5db]" style={{ marginTop: 8, fontSize: 'calc(10px * var(--fs-scale-caption, 1))' }}>

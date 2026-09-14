@@ -13,6 +13,7 @@ import { useAuthStore } from '../../../store/authStore'
 import { useInAppNotificationStore } from '../../../store/inAppNotificationStore'
 import { usePluginStore } from '../../../store/pluginStore'
 import { useTripCardBadges } from '../../../components/Plugins/TripCardBadges'
+import { APP_NAME } from '@trek/shared'
 import type { TripCardBadge } from '../../../api/client'
 import DemoBanner from '../../../components/Layout/DemoBanner'
 import { IcsSubscribeModal } from '../../../components/Planner/IcsSubscribeModal'
@@ -225,7 +226,7 @@ export default function MDashboard(): React.ReactElement {
           type="button"
           // The page itself is the scroller since #1809, no inner container to walk up to.
           onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-          aria-label="TREK"
+          aria-label={APP_NAME}
           className="flex flex-none items-center gap-[7px]"
         >
           <span className="flex h-[38px] w-[38px] items-center justify-center rounded-[11px] bg-[#101013]">{/* theme-lint-disable — brand tile stays black in both themes */}

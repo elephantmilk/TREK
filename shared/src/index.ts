@@ -8,6 +8,7 @@
  * Layout: one folder per domain (e.g. src/trip/trip.schema.ts), plus the
  * domain-agnostic primitives below. See the board card "Module blueprint".
  */
+export * from './brand';
 export * from './common/primitives.schema';
 export * from './common/pagination.schema';
 

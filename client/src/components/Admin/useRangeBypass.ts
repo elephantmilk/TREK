@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { AlertTriangle } from 'lucide-react'
+import { APP_NAME } from '@trek/shared'
 import { useTranslation } from '../../i18n'
 
 type T = (k: string, p?: Record<string, unknown>) => string
@@ -57,6 +58,13 @@ export function rangeWarningCopy(w: RangeWarning, t: T): { title: string; body: 
       ? t('admin.plugins.rangeBypass.body', { name: w.name, range: w.trekRange, host: w.hostVersion })
       : t('admin.plugins.rangeBypass.bodyUnknown', { name: w.name, host: w.hostVersion }),
   }
+}
+
+/** Visible "requires trip4 x.y" line on a plugin's details. */
+export function pluginRequiresLabel(item: { trek?: string | null; minTrekVersion?: string | null }): string | null {
+  if (item.trek) return `${APP_NAME} ${item.trek}`
+  if (item.minTrekVersion) return `${APP_NAME} ${item.minTrekVersion}+`
+  return null
 }
 
 /**

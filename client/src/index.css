@@ -1143,7 +1143,7 @@ body {
 }
 
 /* Brand images: no save/copy/drag */
-img[alt="TREK"] {
+img[alt="trip4"] {
   pointer-events: none;
   user-select: none;
   -webkit-user-select: none;

@@ -10,6 +10,7 @@ import { classifyRedirectUri } from './oauth.helpers';
 import { AuditService } from '../audit/audit.service';
 import { ALL_SCOPES, DEFAULT_CLIENT_SCOPES } from '../../mcp/scopes';
 import { getMcpSafeUrl } from '../../app-config';
+import { APP_MCP_NAME } from '@trek/shared';
 
 /**
  * TREK's adapters behind the MCP SDK's OAuth server interfaces, wrapping the
@@ -127,7 +128,7 @@ export class TrekOAuthProvider implements OAuthServerProvider {
         if (resource !== mcpResource) {
             const url = new URL(params.redirectUri);
             url.searchParams.set('error', 'invalid_target');
-            url.searchParams.set('error_description', 'Requested resource must be the TREK MCP endpoint');
+            url.searchParams.set('error_description', `Requested resource must be the ${APP_MCP_NAME} endpoint`);
             if (params.state) url.searchParams.set('state', params.state);
             res.redirect(302, url.toString());
             return;

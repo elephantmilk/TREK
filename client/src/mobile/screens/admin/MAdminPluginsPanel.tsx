@@ -10,7 +10,7 @@ import {
 import PluginIcon from '../../../components/shared/PluginIcon'
 import { adminApi } from '../../../api/client'
 import { useInstanceSettings } from '../../../components/Admin/useInstanceSettings'
-import { bypassChip, bypassOffer, useRangeBypass, type RangeWarning, type TrekRangeBypass } from '../../../components/Admin/useRangeBypass'
+import { bypassChip, bypassOffer, pluginRequiresLabel, useRangeBypass, type RangeWarning, type TrekRangeBypass } from '../../../components/Admin/useRangeBypass'
 import { usePluginStore } from '../../../store/pluginStore'
 import { useTranslation } from '../../../i18n'
 import { useToast } from '../../../components/shared/Toast'
@@ -1850,7 +1850,7 @@ function PluginDetailSheet({ item, installed, busy, onInstall, onClose, t, local
               {/* The range, not just its lower bound: "TREK 3.2.0+" reads as "and anything
                   newer", which is exactly the claim a `<4.0.0` upper bound denies. */}
               {(item.trek || item.minTrekVersion) && (
-                <Meta k={t('admin.plugins.metaRequires')} v={item.trek ? `TREK ${item.trek}` : `TREK ${item.minTrekVersion}+`} />
+                <Meta k={t('admin.plugins.metaRequires')} v={pluginRequiresLabel(item) ?? ''} />
               )}
               {item.reviewedAt && <Meta k={t('admin.plugins.metaReviewed')} v={new Date(item.reviewedAt).toLocaleDateString(locale)} />}
               {typeof item.downloadCount === 'number' && item.downloadCount > 0 && (

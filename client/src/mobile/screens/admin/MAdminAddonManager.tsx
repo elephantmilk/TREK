@@ -1,6 +1,7 @@
 import { useEffect, useState, type ComponentType } from 'react'
 import { adminApi } from '../../../api/client'
 import { useTranslation } from '../../../i18n'
+import { APP_NAME } from '@trek/shared'
 import { useSettingsStore } from '../../../store/settingsStore'
 import { useAddonStore } from '../../../store/addonStore'
 import { useToast } from '../../../components/shared/Toast'
@@ -167,7 +168,7 @@ export default function MAdminAddonManager({ bagTrackingEnabled, onToggleBagTrac
         <div className="text-[0.875rem] font-extrabold text-m-ink">{t('admin.addons.title')}</div>
         <p className="mt-[2px] flex flex-wrap items-center gap-1 font-geist text-[0.625rem] leading-relaxed text-m-muted">
           {t('admin.addons.subtitleBefore')}
-          <img src={dark ? '/text-light.svg' : '/text-dark.svg'} alt="TREK" style={{ height: 11, display: 'inline', verticalAlign: 'middle', opacity: 0.7 }} />
+          <img src={dark ? '/text-light.svg' : '/text-dark.svg'} alt={APP_NAME} style={{ height: 11, display: 'inline', verticalAlign: 'middle', opacity: 0.7 }} />
           {t('admin.addons.subtitleAfter')}
         </p>
       </MAdminCard>

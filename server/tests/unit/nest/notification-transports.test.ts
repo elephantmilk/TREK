@@ -161,7 +161,7 @@ describe('buildWebhookBody', () => {
   it('Discord embed footer defaults to TREK when no trip name', () => {
     const noTrip = { ...payload, tripName: undefined };
     const body = JSON.parse(buildWebhookBody('https://discord.com/api/webhooks/123/abc', noTrip));
-    expect(body.embeds[0].footer.text).toBe('TREK');
+    expect(body.embeds[0].footer.text).toBe('trip4');
   });
 
   it('discordapp.com URL is also detected as Discord', () => {
@@ -194,7 +194,7 @@ describe('buildWebhookBody', () => {
     expect(body).toHaveProperty('title', payload.title);
     expect(body).toHaveProperty('body', payload.body);
     expect(body).toHaveProperty('timestamp');
-    expect(body).toHaveProperty('source', 'TREK');
+    expect(body).toHaveProperty('source', 'trip4');
   });
 });
 
@@ -218,19 +218,19 @@ describe('buildEmailHtml', () => {
 
   it('uses English i18n strings for lang=en', () => {
     const html = buildEmailHtml('Subject', 'Body', 'en');
-    expect(html).toContain('notifications enabled in TREK');
+    expect(html).toContain('notifications enabled in trip4');
   });
 
   it('uses German i18n strings for lang=de', () => {
     const html = buildEmailHtml('Subject', 'Body', 'de');
-    expect(html).toContain('TREK aktiviert');
+    expect(html).toContain('trip4 aktiviert');
   });
 
   it('falls back to English i18n for unknown language', () => {
     const en = buildEmailHtml('Subject', 'Body', 'en');
     const unknown = buildEmailHtml('Subject', 'Body', 'xx');
     // Both should have the same footer text
-    expect(unknown).toContain('notifications enabled in TREK');
+    expect(unknown).toContain('notifications enabled in trip4');
   });
 });
 

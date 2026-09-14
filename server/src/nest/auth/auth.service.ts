@@ -8,6 +8,7 @@ import QRCode from 'qrcode';
 import { randomBytes, createHash } from 'crypto';
 import type { Request, Response } from 'express';
 import { readEnv } from '../../app-config';
+import { APP_NAME } from '@trek/shared';
 import { JWT_SECRET, SESSION_DURATION_SECONDS, SESSION_DURATION_REMEMBER_SECONDS } from '../../config';
 import { DatabaseService } from '../database/database.service';
 import { PermissionsService } from '../permissions/permissions.service';
@@ -737,7 +738,7 @@ export class AuthService {
     try {
       secret = authenticator.generateSecret();
       mfaSetupPending.set(userId, { secret, exp: Date.now() + MFA_SETUP_TTL_MS });
-      otpauth_url = authenticator.keyuri(userEmail, 'TREK', secret);
+      otpauth_url = authenticator.keyuri(userEmail, APP_NAME, secret);
     } catch (err) {
       console.error('[MFA] Setup error:', err);
       return { error: 'MFA setup failed', status: 500 };

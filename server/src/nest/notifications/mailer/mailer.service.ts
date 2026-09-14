@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import nodemailer from 'nodemailer';
 import { PASSWORD_RESET_I18N } from '@trek/shared/i18n/externalNotifications';
+import { APP_NAME } from '@trek/shared';
 import { readEnv } from '../../../app-config';
 import { logError, logInfo, logDebug, logWarn } from '../../audit/audit-log.logger';
 import { decrypt_api_key } from '../../common/crypto/apiKeyCrypto';
@@ -185,7 +186,7 @@ export class MailerService {
       await this.createTransport(smtpCfg).sendMail({
         from: smtpCfg.from,
         to,
-        subject: `TREK — ${strings.subject}`,
+        subject: `${APP_NAME} — ${strings.subject}`,
         text: `${strings.greeting}, ${to}\n\n${strings.body}\n\n${strings.ctaIntro}: ${resetUrl}\n\n${strings.expiry}\n${strings.ignore}`,
         html: buildPasswordResetHtml(strings.subject, strings, to, resetUrl, lang),
       });
@@ -213,7 +214,7 @@ export class MailerService {
       await this.createTransport(config).sendMail({
         from: config.from,
         to,
-        subject: `TREK — ${subject}`,
+        subject: `${APP_NAME} — ${subject}`,
         text: body,
         html: buildEmailHtml(subject, body, lang, navigateTarget),
       });
@@ -245,8 +246,8 @@ export class MailerService {
       await this.createTransport(config, TEST_SOCKET_TIMEOUT_MS).sendMail({
         from: config.from,
         to,
-        subject: 'TREK — Test Notification',
-        text: 'This is a test email from TREK. If you received this, your SMTP configuration is working correctly.',
+        subject: `${APP_NAME} — Test Notification`,
+        text: `This is a test email from ${APP_NAME}. If you received this, your SMTP configuration is working correctly.`,
       });
       logInfo(`SMTP test email sent to=${to} ${this.describeTarget(config)}`);
       return { success: true };

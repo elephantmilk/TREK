@@ -12,6 +12,7 @@ import { sessions, evictOldestSessionForUser } from '../../mcp/sessionManager';
 import { SESSION_TTL_MS, MAX_SESSIONS_PER_USER, KEEPALIVE_MS, isRateLimited } from '../../mcp';
 import { BASE_MCP_INSTRUCTIONS, STATIC_TOKEN_DEPRECATION_NOTICE } from './mcp-transport.constants';
 import { AuthService } from '../auth/auth.service';
+import { APP_MCP_NAME } from '@trek/shared';
 import { TokenService } from '../tokens/token.service';
 import { OauthService } from '../oauth/oauth.service';
 import { AddonsService } from '../addons/addons.service';
@@ -102,7 +103,7 @@ export function setAuthChallenge(res: Response, error = 'invalid_token'): void {
   const base = trimTrailingSlashes(getMcpSafeUrl() || '');
   // RFC 9728 §5: resource with path component /mcp → PRM URL must include the path
   res.set('WWW-Authenticate',
-      `Bearer realm="TREK MCP", resource_metadata="${base}/.well-known/oauth-protected-resource/mcp", error="${error}"`);
+      `Bearer realm="${APP_MCP_NAME}", resource_metadata="${base}/.well-known/oauth-protected-resource/mcp", error="${error}"`);
 }
 
 export interface VerifyTokenResult {
@@ -249,7 +250,7 @@ export class McpTransportService {
     // Create a new per-user MCP server and session
     const server = new McpServer(
         {
-          name: 'TREK MCP',
+          name: APP_MCP_NAME,
           version: '1.0.0',
         },
         {

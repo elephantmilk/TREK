@@ -39,7 +39,7 @@ const settings: TranslationStrings = {
   'settings.mapCartoKeyHint': 'CARTO-basiskaarten tonen zonder sleutel een watermerk. Gratis en zonder account, via',
   'settings.mapCartoKeyLink': 'carto.com basemap API-sleutel',
   'settings.mapCartoKeyMissing':
-    'Deze sjabloon is een CARTO-basiskaart. Zonder sleutel drukt CARTO "API KEY REQUIRED" op elke tegel. Zolang er geen sleutel is, toont TREK de standaardbasiskaart.',
+    'Deze sjabloon is een CARTO-basiskaart. Zonder sleutel drukt CARTO "API KEY REQUIRED" op elke tegel. Zolang er geen sleutel is, toont trip4 de standaardbasiskaart.',
   'settings.mapStyle': 'Kaartstijl',
   'settings.mapStylePlaceholder': 'Kies een Mapbox-stijl',
   'settings.mapStyleHint': 'Preset of eigen mapbox://styles/USER/ID URL',
@@ -189,13 +189,13 @@ const settings: TranslationStrings = {
   'settings.about.featureRequestHint': 'Stel een nieuwe functie voor',
   'settings.about.wikiHint': 'Documentatie en handleidingen',
   'settings.about.descriptionManaged':
-    'TREK helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
+    'trip4 helps you organize your trips from the first idea to the last memory. Day planning, budget, packing lists, photos and much more — all in one place.',
   'settings.about.sourceTitle': 'Source code',
-  'settings.about.sourceHint': 'TREK is open source, licensed AGPL-3.0',
+  'settings.about.sourceHint': 'trip4 is open source, licensed AGPL-3.0',
   'settings.about.supporters.badge': 'Maandelijkse Steuners',
-  'settings.about.supporters.title': 'Reisgezelschap voor TREK',
+  'settings.about.supporters.title': 'Reisgezelschap voor trip4',
   'settings.about.supporters.subtitle':
-    'Terwijl jij je volgende route plant, plannen deze mensen mee aan de toekomst van TREK. Hun maandelijkse bijdrage gaat rechtstreeks naar ontwikkeling en echte uren — zodat TREK Open Source blijft.',
+    'Terwijl jij je volgende route plant, plannen deze mensen mee aan de toekomst van trip4. Hun maandelijkse bijdrage gaat rechtstreeks naar ontwikkeling en echte uren — zodat trip4 Open Source blijft.',
   'settings.about.supporters.since': 'steuner sinds {date}',
   'settings.about.supporters.tierEmpty': 'Wees de eerste',
   'settings.about.supporter.tier.noReturnTicket': 'No Return Ticket',
@@ -204,7 +204,7 @@ const settings: TranslationStrings = {
   'settings.about.supporter.tier.budgetTraveller': 'Budget Traveller',
   'settings.about.supporter.tier.hostelBunkmate': 'Hostel Bunkmate',
   'settings.about.description':
-    "TREK is een zelf-gehoste reisplanner die je helpt je reizen te organiseren van het eerste idee tot de laatste herinnering. Dagplanning, budget, paklijsten, foto's en nog veel meer — alles op één plek, op je eigen server.",
+    "trip4 is een zelf-gehoste reisplanner die je helpt je reizen te organiseren van het eerste idee tot de laatste herinnering. Dagplanning, budget, paklijsten, foto's en nog veel meer — alles op één plek, op je eigen server.",
   'settings.about.madeWith': 'Gemaakt met',
   'settings.about.madeBy': 'door Maurice en een groeiende open-source community.',
   'settings.username': 'Gebruikersnaam',
@@ -351,7 +351,7 @@ const settings: TranslationStrings = {
   'settings.airtrail.allowInsecureTlsHint': 'Schakel dit alleen in voor een vertrouwde instantie op je eigen netwerk.',
   'settings.airtrail.writeBack': 'Wijzigingen terugschrijven naar AirTrail',
   'settings.airtrail.writeBackHint':
-    'Standaard uit: AirTrail is de bron van waarheid en TREK leest er alleen uit. Schakel in om in TREK gemaakte wijzigingen terug te sturen naar AirTrail.',
+    'Standaard uit: AirTrail is de bron van waarheid en trip4 leest er alleen uit. Schakel in om in trip4 gemaakte wijzigingen terug te sturen naar AirTrail.',
   'settings.airtrail.connected': 'Verbonden',
   'settings.airtrail.notConnected': 'Niet verbonden',
   'settings.airtrail.toast.saved': 'AirTrail-verbinding opgeslagen',
@@ -464,7 +464,7 @@ const settings: TranslationStrings = {
   'settings.startPageDashboard': 'Dashboard',
   'settings.startPageActiveTrip': 'Actieve reis',
   'settings.startPageHint':
-    'TREK opent direct de reis die nu loopt, of anders de eerstvolgende. Dat is dezelfde reis die het dashboard uitlicht.',
+    'trip4 opent direct de reis die nu loopt, of anders de eerstvolgende. Dat is dezelfde reis die het dashboard uitlicht.',
   'settings.startTripTab': 'Starttabblad',
   'settings.startTripTabHint':
     'Het tabblad waarmee de reis opent. Hoort het bij een uitgeschakelde add-on, dan opent het plan in plaats daarvan.',

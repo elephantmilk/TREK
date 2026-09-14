@@ -291,7 +291,7 @@ const admin: TranslationStrings = {
   'admin.plugins.sourceRepo': 'Repositori sumber',
   'admin.plugins.reportIssue': 'Laporkan masalah',
   'admin.plugins.homepage': 'Beranda',
-  'admin.plugins.requiresTrek': 'Memerlukan TREK {version}+',
+  'admin.plugins.requiresTrek': 'Memerlukan trip4 {version}+',
   'admin.plugins.reviewedOn': 'Ditinjau {date}',
   'admin.plugins.perm.db:own': 'Menyimpan datanya sendiri di database terisolasi',
   'admin.plugins.perm.db:read:trips': 'Membaca perjalanan yang dapat diakses oleh pengguna yang bersangkutan',
@@ -386,7 +386,7 @@ const admin: TranslationStrings = {
   'admin.plugins.perm.mcp:tools':
     'Menerbitkan alat yang dapat dijalankan asisten AI atas nama Anda (bertindak dengan akses yang Anda berikan ke plugin di sini, bukan milik asisten)',
   'admin.plugins.perm.geolocation:read':
-    'Meminta lokasi terkinimu selama salah satu tampilannya terbuka (TREK membacanya dengan izin lokasi situs ini, bukan izin milik plugin sendiri)',
+    'Meminta lokasi terkinimu selama salah satu tampilannya terbuka (trip4 membacanya dengan izin lokasi situs ini, bukan izin milik plugin sendiri)',
   'admin.plugins.perm.hook:pdf-section-provider': 'Menambahkan bagian teks ke ekspor PDF perjalanan',
   'admin.plugins.perm.hook:atlas-layer-provider':
     'Menyorot negara di peta dunia Atlas (mis. daftar keinginan atau peringatan perjalanan)',
@@ -413,26 +413,26 @@ const admin: TranslationStrings = {
   'admin.plugins.updateLater': 'Biarkan nonaktif dulu',
   'admin.plugins.updateKeptOff': 'Pembaruan terpasang — dibiarkan nonaktif sampai kamu menyetujui izin baru',
   'admin.plugins.reviewedMeaning':
-    '"Ditinjau" berarti seorang maintainer TREK memindai plugin ini dari malware pada setiap versi — bukan untuk kualitas atau apakah plugin ini berfungsi. Ini bukan jaminan bahwa sebuah plugin tidak berbahaya.',
+    '"Ditinjau" berarti seorang maintainer trip4 memindai plugin ini dari malware pada setiap versi — bukan untuk kualitas atau apakah plugin ini berfungsi. Ini bukan jaminan bahwa sebuah plugin tidak berbahaya.',
   'admin.plugins.security.title': 'Bagaimana plugin dikungkung — dan batasannya',
   'admin.plugins.security.isolationTitle': 'Setiap plugin berjalan dalam kotak terisolasi',
   'admin.plugins.security.isolationBody':
-    'Sebuah plugin berjalan sebagai prosesnya sendiri yang terkunci dan hanya bisa membaca file-nya sendiri. Ia tidak bisa membaca database kamu, rahasia login kamu, atau kunci enkripsi kamu, tidak bisa menjalankan program lain, dan tidak bisa menulis file di mana pun. Antarmukanya berjalan dalam frame browser tersegel yang tidak bisa membaca cookie sesi kamu atau menyentuh halaman TREK di sekitarnya.',
+    'Sebuah plugin berjalan sebagai prosesnya sendiri yang terkunci dan hanya bisa membaca file-nya sendiri. Ia tidak bisa membaca database kamu, rahasia login kamu, atau kunci enkripsi kamu, tidak bisa menjalankan program lain, dan tidak bisa menulis file di mana pun. Antarmukanya berjalan dalam frame browser tersegel yang tidak bisa membaca cookie sesi kamu atau menyentuh halaman trip4 di sekitarnya.',
   'admin.plugins.security.permsTitle': 'Apa arti izin-izin ini',
   'admin.plugins.security.permsBody':
-    'Izin yang ditampilkan sebelum kamu memasang adalah batas keras yang diberlakukan TREK selama plugin berjalan — secara harfiah plugin tidak bisa melakukan apa pun yang tidak ada dalam daftar. Namun izin itu memberitahumu apa yang bisa dilakukan sebuah plugin, bukan apa yang sebenarnya dilakukannya. Plugin yang diizinkan membaca perjalananmu dan menjangkau sebuah server bisa mengirimkan perjalananmu ke server itu, jadi baca izin dan host keluarnya, bukan hanya deskripsinya.',
+    'Izin yang ditampilkan sebelum kamu memasang adalah batas keras yang diberlakukan trip4 selama plugin berjalan — secara harfiah plugin tidak bisa melakukan apa pun yang tidak ada dalam daftar. Namun izin itu memberitahumu apa yang bisa dilakukan sebuah plugin, bukan apa yang sebenarnya dilakukannya. Plugin yang diizinkan membaca perjalananmu dan menjangkau sebuah server bisa mengirimkan perjalananmu ke server itu, jadi baca izin dan host keluarnya, bukan hanya deskripsinya.',
   'admin.plugins.security.limitsTitle': 'Apa yang tidak bisa kami janjikan',
   'admin.plugins.security.limitsBody':
-    'Isolasi ini adalah batas perangkat lunak yang kuat, bukan batas yang mutlak. Sebuah plugin bertindak persis dengan hak yang kamu setujui, jadi dalam batas hak itu ia bisa berperilaku berbeda dari yang disiratkan deskripsinya, dan ia bisa mengirim data yang memang dimilikinya secara sah ke host yang telah dideklarasikannya. TREK tidak membaca atau menilai apa yang sebenarnya dilakukan oleh kode sebuah plugin.',
+    'Isolasi ini adalah batas perangkat lunak yang kuat, bukan batas yang mutlak. Sebuah plugin bertindak persis dengan hak yang kamu setujui, jadi dalam batas hak itu ia bisa berperilaku berbeda dari yang disiratkan deskripsinya, dan ia bisa mengirim data yang memang dimilikinya secara sah ke host yang telah dideklarasikannya. trip4 tidak membaca atau menilai apa yang sebenarnya dilakukan oleh kode sebuah plugin.',
   'admin.plugins.security.worstTitle': 'Skenario terburuk',
   'admin.plugins.security.worstBody':
     'Plugin berbahaya yang kamu aktifkan bisa menyalahgunakan data dan koneksi yang kamu berikan padanya — misalnya, membocorkan perjalanan yang boleh dibacanya. Ia tidak bisa mencuri kata sandi, memalsukan login admin, menjalankan perintah di servermu, atau menjangkau data yang tidak kamu berikan. Kerusakannya tetap dalam batas yang kamu setujui, dan menonaktifkan plugin akan menghentikannya.',
   'admin.plugins.security.reviewedTitle': 'Apa arti "Ditinjau"',
   'admin.plugins.security.reviewedBody':
-    'Plugin yang ditinjau telah dipindai secara manual dari malware oleh seorang maintainer TREK pada setiap versi — diperiksa untuk kode berbahaya, bukan untuk apakah plugin berfungsi dengan baik. Ini bukan janji bahwa plugin tidak berbahaya.',
+    'Plugin yang ditinjau telah dipindai secara manual dari malware oleh seorang maintainer trip4 pada setiap versi — diperiksa untuk kode berbahaya, bukan untuk apakah plugin berfungsi dengan baik. Ini bukan janji bahwa plugin tidak berbahaya.',
   'admin.plugins.security.signedTitle': 'Apa arti "Ditandatangani"',
   'admin.plugins.security.signedBody':
-    'Checksum yang diverifikasi TREK pada setiap pemasangan membuktikan bahwa file-nya persis seperti yang dijamin registri. Tanda tangan membuktikan hal yang berbeda: bahwa file itu datang dari pembuatnya, ditandatangani dengan kunci yang hanya dia miliki. Plugin yang ditandatangani punya keduanya. Plugin tanpa tanda tangan bukan berarti tidak aman — ia hanya membawa satu jaminan lebih sedikit, dan sebagian besar plugin di registri saat ini memang belum ditandatangani.',
+    'Checksum yang diverifikasi trip4 pada setiap pemasangan membuktikan bahwa file-nya persis seperti yang dijamin registri. Tanda tangan membuktikan hal yang berbeda: bahwa file itu datang dari pembuatnya, ditandatangani dengan kunci yang hanya dia miliki. Plugin yang ditandatangani punya keduanya. Plugin tanpa tanda tangan bukan berarti tidak aman — ia hanya membawa satu jaminan lebih sedikit, dan sebagian besar plugin di registri saat ini memang belum ditandatangani.',
   'admin.plugins.signed': 'Ditandatangani',
   'admin.plugins.signedHint': 'Diverifikasi dengan kunci tanda tangan pembuatnya saat dipasang',
   'admin.plugins.unsigned': 'Tanpa tanda tangan',
@@ -447,20 +447,20 @@ const admin: TranslationStrings = {
   'admin.plugins.sig.invalidBody':
     'File-nya tidak cocok dengan tanda tangan pembuatnya. File itu bukan yang ditandatangani pembuatnya — entah rusak, entah diutak-atik. Ini tidak bisa dilewati.',
   'admin.plugins.sig.missingBody':
-    'Plugin ini ditandatangani saat kamu memasangnya, tetapi versi barunya tidak menyertakan tanda tangan. TREK tidak akan diam-diam menerima kemunduran itu. Ini tidak bisa dilewati.',
+    'Plugin ini ditandatangani saat kamu memasangnya, tetapi versi barunya tidak menyertakan tanda tangan. trip4 tidak akan diam-diam menerima kemunduran itu. Ini tidak bisa dilewati.',
   'admin.plugins.sig.incompleteBody':
     'Entri registrinya setengah ditandatangani: ia mendeklarasikan kunci pembuat tetapi versinya tidak membawa tanda tangan (atau sebaliknya). Itu kesalahan di sisi plugin. Ini tidak bisa dilewati.',
   'admin.plugins.sig.pinnedKey': 'Kunci saat dipasang',
   'admin.plugins.sig.newKey': 'Kunci yang ditawarkan sekarang',
   'admin.plugins.sig.confirmOutOfBand':
-    'TREK tidak bisa membedakan pergantian kunci yang sah dari pengambilalihan — dari sini keduanya terlihat sama persis. Pastikan dulu kunci baru itu ke pembuatnya lewat saluran yang sudah kamu percaya sebelum kamu menerimanya. Setelah kamu menerimanya, plugin diperbarui dan kunci barunya diingat.',
+    'trip4 tidak bisa membedakan pergantian kunci yang sah dari pengambilalihan — dari sini keduanya terlihat sama persis. Pastikan dulu kunci baru itu ke pembuatnya lewat saluran yang sudah kamu percaya sebelum kamu menerimanya. Setelah kamu menerimanya, plugin diperbarui dan kunci barunya diingat.',
   'admin.plugins.sig.retrustConfirm': 'Percayai kunci baru & perbarui',
   'admin.plugins.sig.cancel': 'Jangan percayai',
   'admin.plugins.sig.consentUnsigned':
     'Tidak ada yang mengaitkan versi ini dengan pembuatnya — file-nya cocok dengan registri, tetapi tidak membawa tanda tangan pembuat.',
   'admin.plugins.security.trustTitle': 'Intinya',
   'admin.plugins.security.trustBody':
-    'Memasang plugin sama seperti memasang aplikasi pihak ketiga mana pun: hanya tambahkan kode dari pembuat yang kamu percaya, dan jika ragu, periksa sendiri terlebih dahulu. TREK tidak bertanggung jawab atas plugin pihak ketiga.',
+    'Memasang plugin sama seperti memasang aplikasi pihak ketiga mana pun: hanya tambahkan kode dari pembuat yang kamu percaya, dan jika ragu, periksa sendiri terlebih dahulu. trip4 tidak bertanggung jawab atas plugin pihak ketiga.',
   'admin.plugins.runtimeOn': 'Runtime aktif',
   'admin.plugins.tabDiscover': 'Jelajahi',
   'admin.plugins.searchPlaceholder': 'Cari plugin…',
@@ -476,11 +476,11 @@ const admin: TranslationStrings = {
   'admin.plugins.sortUpdates': 'Pembaruan dulu',
   'admin.plugins.sortDownloads': 'Paling banyak diunduh',
   'admin.plugins.updatesAvailable': '{count} pembaruan tersedia untuk plugin kamu.',
-  'admin.plugins.newerNeedsTrek': 'v{version} tersedia — membutuhkan TREK {range}',
+  'admin.plugins.newerNeedsTrek': 'v{version} tersedia — membutuhkan trip4 {range}',
   'admin.plugins.versionsTitle': 'Versi',
   'admin.plugins.versionPickerTitle': 'Ubah versi — {name}',
   'admin.plugins.versionSwitch': 'Beralih ke {version}',
-  'admin.plugins.versionNeedsTrek': 'membutuhkan TREK {range}',
+  'admin.plugins.versionNeedsTrek': 'membutuhkan trip4 {range}',
   'admin.plugins.changeVersion': 'Ubah versi…',
   'admin.plugins.noVersions': 'Tidak ada versi terpublikasi yang ditemukan di registri.',
   'admin.plugins.downgradeTitle': 'Kembalikan plugin ini?',
@@ -542,22 +542,22 @@ const admin: TranslationStrings = {
   'admin.plugins.dep.download': 'Unduh',
   'admin.plugins.dep.update': 'Perbarui',
   'admin.plugins.dep.resolveHint': 'Mengunduh versi kompatibel terbaru, termasuk dependensinya sendiri.',
-  'admin.plugins.dep.trekIncompatible': 'Membutuhkan TREK {range} — server ini menjalankan {host}',
-  'admin.plugins.dep.trekUnknown': 'Tidak menyatakan versi TREK mana yang didukung',
+  'admin.plugins.dep.trekIncompatible': 'Membutuhkan trip4 {range} — server ini menjalankan {host}',
+  'admin.plugins.dep.trekUnknown': 'Tidak menyatakan versi trip4 mana yang didukung',
   'admin.plugins.installCompatible': 'Instal {version}',
   'admin.plugins.installAnyway': 'Tetap pasang',
   'admin.plugins.rangeBypass.pill': 'Pemeriksaan versi nonaktif',
   'admin.plugins.rangeBypass.pillHint':
-    'TREK_PLUGINS_IGNORE_TREK_RANGE disetel — plugin dapat dipasang dan dijalankan di luar versi TREK yang dinyatakan penulisnya',
-  'admin.plugins.rangeBypass.title': 'Di luar versi TREK yang didukung',
-  'admin.plugins.rangeBypass.noticeTitle': 'Dipasang di luar versi TREK yang didukung',
+    'TREK_PLUGINS_IGNORE_TREK_RANGE disetel — plugin dapat dipasang dan dijalankan di luar versi trip4 yang dinyatakan penulisnya',
+  'admin.plugins.rangeBypass.title': 'Di luar versi trip4 yang didukung',
+  'admin.plugins.rangeBypass.noticeTitle': 'Dipasang di luar versi trip4 yang didukung',
   'admin.plugins.rangeBypass.body':
-    '“{name}” menyatakan dukungan untuk TREK {range}, sedangkan server ini menjalankan {host}. TREK meloloskannya hanya karena TREK_PLUGINS_IGNORE_TREK_RANGE disetel. Penulisnya belum memperbarui rentang versi plugin untuk TREK ini, jadi tidak ada jaminan plugin ini berfungsi — dan dalam kasus yang jarang, plugin yang tidak cocok dapat merusak data TREK. Lanjutkan hanya jika Anda menerima risiko itu.',
+    '“{name}” menyatakan dukungan untuk trip4 {range}, sedangkan server ini menjalankan {host}. trip4 meloloskannya hanya karena TREK_PLUGINS_IGNORE_TREK_RANGE disetel. Penulisnya belum memperbarui rentang versi plugin untuk trip4 ini, jadi tidak ada jaminan plugin ini berfungsi — dan dalam kasus yang jarang, plugin yang tidak cocok dapat merusak data trip4. Lanjutkan hanya jika Anda menerima risiko itu.',
   'admin.plugins.rangeBypass.bodyUnknown':
-    '“{name}” tidak menyatakan versi TREK mana yang didukungnya; server ini menjalankan {host}. TREK meloloskannya hanya karena TREK_PLUGINS_IGNORE_TREK_RANGE disetel. Tidak ada tanda bahwa penulisnya mengujinya di TREK ini, jadi tidak ada jaminan plugin ini berfungsi — dan dalam kasus yang jarang, plugin yang tidak cocok dapat merusak data TREK. Lanjutkan hanya jika Anda menerima risiko itu.',
+    '“{name}” tidak menyatakan versi trip4 mana yang didukungnya; server ini menjalankan {host}. trip4 meloloskannya hanya karena TREK_PLUGINS_IGNORE_TREK_RANGE disetel. Tidak ada tanda bahwa penulisnya mengujinya di trip4 ini, jadi tidak ada jaminan plugin ini berfungsi — dan dalam kasus yang jarang, plugin yang tidak cocok dapat merusak data trip4. Lanjutkan hanya jika Anda menerima risiko itu.',
   'admin.plugins.dep.trekBypassed':
-    'Di luar rentang TREK-nya ({range}) — pemeriksaan versi nonaktif',
-  'admin.plugins.dep.trekBypassedUnknown': 'Tidak menyatakan rentang TREK — pemeriksaan versi nonaktif',
+    'Di luar rentang trip4-nya ({range}) — pemeriksaan versi nonaktif',
+  'admin.plugins.dep.trekBypassedUnknown': 'Tidak menyatakan rentang trip4 — pemeriksaan versi nonaktif',
   'admin.plugins.incompatible': 'Tidak kompatibel',
   'admin.plugins.accessTitle': 'Yang bisa diaksesnya',
   'admin.plugins.connectsTitle': 'Terhubung ke',
@@ -569,7 +569,7 @@ const admin: TranslationStrings = {
   'admin.plugins.metaReviewed': 'Ditinjau pada',
   'admin.plugins.downloads': 'Unduhan',
   'admin.addons.title': 'Addon',
-  'admin.addons.subtitle': 'Aktifkan atau nonaktifkan fitur untuk menyesuaikan pengalaman TREK kamu.',
+  'admin.addons.subtitle': 'Aktifkan atau nonaktifkan fitur untuk menyesuaikan pengalaman trip4 kamu.',
   'admin.addons.catalog.packing.name': 'Daftar',
   'admin.addons.catalog.packing.description': 'Daftar packing dan tugas to-do untuk perjalananmu',
   'admin.addons.catalog.budget.name': 'Biaya',
@@ -609,7 +609,7 @@ const admin: TranslationStrings = {
   'admin.weather.title': 'Data Cuaca',
   'admin.weather.badge': 'Sejak 24 Maret 2026',
   'admin.weather.description':
-    'TREK menggunakan Open-Meteo sebagai sumber data cuaca. Open-Meteo adalah layanan cuaca gratis dan open-source — tidak perlu kunci API.',
+    'trip4 menggunakan Open-Meteo sebagai sumber data cuaca. Open-Meteo adalah layanan cuaca gratis dan open-source — tidak perlu kunci API.',
   'admin.weather.forecast': 'Prakiraan 16 hari',
   'admin.weather.forecastDesc': 'Sebelumnya 5 hari (OpenWeatherMap)',
   'admin.weather.climate': 'Data iklim historis',
@@ -667,14 +667,14 @@ const admin: TranslationStrings = {
   'admin.github.loading': 'Memuat...',
   'admin.github.error': 'Gagal memuat rilis',
   'admin.github.by': 'oleh',
-  'admin.github.support': 'Bantu saya terus mengembangkan TREK',
+  'admin.github.support': 'Bantu saya terus mengembangkan trip4',
   'admin.update.available': 'Pembaruan tersedia',
-  'admin.update.text': 'TREK {version} tersedia. Kamu menggunakan {current}.',
+  'admin.update.text': 'trip4 {version} tersedia. Kamu menggunakan {current}.',
   'admin.update.button': 'Lihat di GitHub',
   'admin.update.install': 'Pasang Pembaruan',
   'admin.update.confirmTitle': 'Pasang Pembaruan?',
   'admin.update.confirmText':
-    'TREK akan diperbarui dari {current} ke {version}. Server akan restart otomatis setelahnya.',
+    'trip4 akan diperbarui dari {current} ke {version}. Server akan restart otomatis setelahnya.',
   'admin.update.dataInfo':
     'Semua datamu (perjalanan, pengguna, kunci API, unggahan, Vacay, Atlas, anggaran) akan dipertahankan.',
   'admin.update.warning': 'Aplikasi akan tidak tersedia sebentar selama restart.',
@@ -686,9 +686,9 @@ const admin: TranslationStrings = {
   'admin.update.backupLink': 'Pergi ke Backup',
   'admin.update.howTo': 'Cara Memperbarui',
   'admin.update.dockerText':
-    'Instans TREK kamu berjalan di Docker. Untuk memperbarui ke {version}, jalankan perintah berikut di servermu:',
+    'Instans trip4 kamu berjalan di Docker. Untuk memperbarui ke {version}, jalankan perintah berikut di servermu:',
   'admin.update.nonDockerText':
-    'Instans TREK ini tidak berjalan di Docker. Untuk memperbarui ke {version}, jalankan ulang metode instalasi atau pembaruan yang kamu gunakan — misalnya, pada Proxmox Community Scripts jalankan pembaruan dari konsol LXC:',
+    'Instans trip4 ini tidak berjalan di Docker. Untuk memperbarui ke {version}, jalankan ulang metode instalasi atau pembaruan yang kamu gunakan — misalnya, pada Proxmox Community Scripts jalankan pembaruan dari konsol LXC:',
   'admin.update.wikiLink': 'Buka panduan pembaruan',
   'admin.update.reloadHint': 'Muat ulang halaman dalam beberapa detik.',
   'admin.tabs.permissions': 'Izin',

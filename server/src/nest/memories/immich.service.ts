@@ -9,6 +9,7 @@ import path from 'node:path';
 import { DatabaseService } from '../database/database.service';
 import { MemoriesAccessService } from './memories-access.service';
 import { fail, handleServiceResult, pipeAsset, type Selection } from './memories.helpers';
+import { APP_NAME } from '@trek/shared';
 
 const ALBUM_PAGE_SIZE = 1000;
 const ALBUM_MAX_PAGES = 20;
@@ -601,7 +602,7 @@ export class ImmichService {
         parts.push(Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="${name}"\r\n\r\n${value}\r\n`));
       };
       addField('deviceAssetId', `trek-${Date.now()}`);
-      addField('deviceId', 'TREK');
+      addField('deviceId', APP_NAME);
       addField('fileCreatedAt', now);
       addField('fileModifiedAt', now);
 
